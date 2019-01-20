@@ -20,7 +20,7 @@
   "license": "MIT",
   "scripts": {
     "heroku-postbuild": "gatsby build",
-    "start": "gatsby serve --port 80",
+    "start": "gatsby serve --port ${PORT}",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
