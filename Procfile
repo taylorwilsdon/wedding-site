@@ -1,1 +1,1 @@
-web: yarn start --port ${PORT:3000}
+web: yarn serve --port ${PORT:3000}
