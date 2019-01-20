@@ -1,1 +1,1 @@
-web: yarn serve --port ${PORT:3000}
+web: npm serve --port ${PORT:3000}
