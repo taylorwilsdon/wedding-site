@@ -19,6 +19,8 @@
   ],
   "license": "MIT",
   "scripts": {
+    "heroku-postbuild": "gatsby build",
+    "start": "gatsby serve --port 80",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
