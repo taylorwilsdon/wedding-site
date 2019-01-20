@@ -42,7 +42,6 @@ class Main extends React.Component {
 
         <article id="registry" className={`${this.props.article === 'registry' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <h2 className="major">Registry</h2>
-          <input type="password"></input>
           <p>Registry is coming soon!</p>
           {close}
         </article>
