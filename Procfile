@@ -1,2 +1,1 @@
-web: gatsby serve --port ${PORT}
-
+web: yarn start --port ${PORT:3000}
