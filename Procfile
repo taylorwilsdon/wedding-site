@@ -1,1 +1,0 @@
-web: npm serve --port ${PORT:3000}
