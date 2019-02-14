@@ -1,5 +1,7 @@
 import React from 'react'
+import SimpleMap from '../components/SimpleMap'
 import PropTypes from 'prop-types'
+import us from '../images/us.png'
 
 class Main extends React.Component {
   render() {
@@ -9,33 +11,22 @@ class Main extends React.Component {
     return (
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}>
 
-        <article id="details" className={`${this.props.article === 'details' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-          <div align="center">
-            <h2 className="major">Ceremony & Reception</h2>
-            <h4>Four in the afternoon</h4>
-            <h3>Bernardus Lodge & Spa</h3>
-            <h4>415 W Carmel Valley Rd <br />Carmel Valley, CA 93924</h4>
-            <h5><i>Reception to follow</i></h5>
-          </div>
-          {close}
-        </article>
-
         <article id="accommodations" className={`${this.props.article === 'accommodations' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-        <div align="center">
-          <h2 className="major">Accommodations</h2>
-          <h3>Bernardus Lodge & Spa</h3>
-          <span className="image main"><img src="https://www.bernarduslodge.com/assets/images/home-spa.jpg" alt="" /></span>
-          <p>The serene character of Bernardus Lodge & Spa echoes an authentic Wine Country retreat. Bernardus  nurtures a relaxing escape from the bustle of life—to calm and revitalize all of the senses, providing the finest resort experience of all Carmel Valley.</p>
-          <p>
-          Room block pricing available by phone, mention Zarin/Barrett-Wilsdon Wedding.</p>
-          <a href="https://www.bernarduslodge.com">Website</a> | P: (831) 658-3400
+          <div align="center">
+            <h2 className="major">Accommodations</h2>
+            <h3>Bernardus Lodge & Spa</h3>
+            <span className="image main"><img src="https://www.bernarduslodge.com/assets/images/home-spa.jpg" alt="" /></span>
+            <p>The serene character of Bernardus Lodge & Spa echoes an authentic Wine Country retreat. Bernardus  nurtures a relaxing escape from the bustle of life—to calm and revitalize all of the senses, providing the finest resort experience of all Carmel Valley.</p>
+            <p>
+              Room block pricing available by phone, mention Zarin/Barrett-Wilsdon Wedding.</p>
+            <a href="https://www.bernarduslodge.com">Website</a> | P: (831) 658-3400
           <p></p>
-          <h3>Carmel Mission Inn</h3>
-          <span className="image main"><img src="https://www.carmelmissioninn.com/wp-content/themes/connected/dist/images/home/cmi-home-blend-1-sm.jpg" alt="" /></span>
-          <p>The Carmel Mission Inn combines convenient Carmel Valley lodging with approachable service, thoughtful amenities and value. The Mission Inn has a charmingly stylish setting with an array of amenities that include a heated pool, a spacious hot tub, a fitness room, and spa services.</p>
-          <p>
-          Discounted rate available by phone, mention Zarin/Barrett-Wilsdon Wedding.</p>
-          <a href="https://www.carmelmissioninn.com">Website</a> | P: (800) 348-9090
+            <h3>Carmel Mission Inn</h3>
+            <span className="image main"><img src="https://www.carmelmissioninn.com/wp-content/themes/connected/dist/images/home/cmi-home-blend-1-sm.jpg" alt="" /></span>
+            <p>The Carmel Mission Inn combines convenient Carmel Valley lodging with approachable service, thoughtful amenities and value. The Mission Inn has a charmingly stylish setting with an array of amenities that include a heated pool, a spacious hot tub, a fitness room, and spa services.</p>
+            <p>
+              Discounted rate available by phone, mention Zarin/Barrett-Wilsdon Wedding.</p>
+            <a href="https://www.carmelmissioninn.com">Website</a> | P: (800) 348-9090
           {close}
           </div>
         </article>
@@ -46,35 +37,48 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
-          </ul>
+        <article id="travel" className={`${this.props.article === 'travel' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
+        <div align="center"><h2 className="major">Travel</h2></div>
+        {/* <SimpleMap></SimpleMap> */}
+          <div align="center" style={{float:'left', width:'45%'}}>
+            <h3>To Carmel</h3>
+            <h4>By Air</h4>
+            Monterey Regional Airport (MRY) is located just a few minutes from Carmel, but it's a small airport and will have limited flights depending on where you are traveling from.
+             San Jose International Airport (SJC) is located about 75 miles from the wedding, but has significantly more flight options.
+           <br /><br />
+            <h4>From The Bay Area</h4>
+            Carmel is easily accessible by car from anywhere in the Bay Area.
+            It is roughly two hours by car from San Francisco, and an hour and twenty minutes from San Jose.
+        </div>
+          <div align="center" style={{float:'right', width:'45%'}}>
+            <h3>To Venue</h3>
+            <h4>By Car</h4>
+            A vehicle is highly recommended during your stay in Carmel, there are extremely limited public transportation and ridesharing options.<br />
+            If you wish to drive to the event, Bernardus Lodge & Spa offers free parking with the option to leave your vehicle overnight.<br />
+            <br />
+            <h4>By Shuttle</h4>
+            More information to follow closer to the date of the ceremony.
+        </div>
           {close}
         </article>
-
+        <article id="us" className={`${this.props.article === 'us' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
+        <div align="center">
+        <h2 className="major">Us</h2>
+        <img src={us} /><br />
+        <span>Engagement Party at Filoli Gardens, August 2018</span>
+          {close}
+          </div>
+        </article>
+        <article id="bigday" className={`${this.props.article === 'bigday' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
+        <div align="center">
+        <h2 className="major">Ceremony & Reception</h2>
+            <h4>Four in the afternoon</h4>
+            <h3>Bernardus Lodge & Spa</h3>
+            <h4>415 W Carmel Valley Rd <br />Carmel Valley, CA 93924</h4>
+            <h5>Black Tie Attire</h5>
+          {close}
+          </div>
+        </article>
       </div>
     )
   }

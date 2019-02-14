@@ -8,14 +8,16 @@ const Header = (props) => (
                 <p>
                 Join us in celebrating the marriage of</p>
                 <h1>Mileen Zarin & Taylor Barrett-Wilsdon</h1>
-                <p>October 20th, 2019</p>
+                <p>October Twenty, Two Thousand Ninteen</p>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('details')}}>Details</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('accommodations')}}>Accommodations</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('bigday')}}>Wedding</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('accommodations')}}>Stay</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('travel')}}>Travel</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('registry')}}>Registry</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('us')}}>Us</a></li>
             </ul>
         </nav>
     </header>

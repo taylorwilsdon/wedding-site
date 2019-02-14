@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Wilsdon / Zarin Wedding",
+    title: "Zarin / Barrett-Wilsdon Wedding",
     author: "Taylor Barrett-Wilsdon",
     description: "The marriage of Taylor Barrett-Wilsdon & Mileen Zarin"
   },
@@ -18,7 +18,6 @@ module.exports = {
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
-  ],
+    'gatsby-plugin-sass'
+    ],
 }
