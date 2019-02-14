@@ -1,5 +1,4 @@
 import React from 'react'
-import SimpleMap from '../components/SimpleMap'
 import PropTypes from 'prop-types'
 import us from '../images/us.png'
 
@@ -39,7 +38,6 @@ class Main extends React.Component {
 
         <article id="travel" className={`${this.props.article === 'travel' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
         <div align="center"><h2 className="major">Travel</h2></div>
-        {/* <SimpleMap></SimpleMap> */}
           <div align="center" style={{float:'left', width:'45%'}}>
             <h3>To Carmel</h3>
             <h4>By Air</h4>
