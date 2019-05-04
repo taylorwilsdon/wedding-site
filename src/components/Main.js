@@ -31,9 +31,11 @@ class Main extends React.Component {
         </article>
 
         <article id="registry" className={`${this.props.article === 'registry' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
+        <div align="center">
           <h2 className="major">Registry</h2>
-          <p>Registry is coming soon!</p>
+          <p><a href="https://www.blueprintregistry.com/registry/mileenandmilo">Click here to view our registry!</a></p>
           {close}
+        </div>
         </article>
 
         <article id="travel" className={`${this.props.article === 'travel' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>

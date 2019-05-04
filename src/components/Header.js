@@ -5,8 +5,7 @@ const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="content">
             <div className="inner">
-                <p>
-                Join us in celebrating the marriage of</p>
+                <p>Join us in celebrating the marriage of</p>
                 <h1>Mileen Zarin & Taylor Barrett-Wilsdon</h1>
                 <p>October Twenty, Two Thousand Nineteen</p>
             </div>
