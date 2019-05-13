@@ -56,8 +56,8 @@ class Main extends React.Component {
             A vehicle is highly recommended during your stay in Carmel, there are extremely limited public transportation and ridesharing options.<br />
             If you wish to drive to the event, Bernardus Lodge & Spa offers free parking with the option to leave your vehicle overnight.<br />
             <br />
-            <h4>By Shuttle</h4>
-            More information to follow closer to the date of the ceremony.
+            <h4>From Venue</h4>
+            We will be providing shuttle busses to transport you home after the wedding, offering dropoffs at our recommended hotels as well as any other location. If you drove to the venue, you're free to leave your car overnight at no charge!
         </div>
           {close}
         </article>
